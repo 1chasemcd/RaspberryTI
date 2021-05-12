@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mouser)(type Legacy)(uri "C:/Users/bendj/Desktop/calculatest/keypad pcb/libs/SamacSys_Parts.lib")(options "")(descr ""))
+  (lib (name usb-c)(type Legacy)(uri "C:/Users/bendj/Desktop/calculatest/keypad pcb/libs/other/UJC-HP-3-SMT-TR.lib")(options "")(descr ""))
+)

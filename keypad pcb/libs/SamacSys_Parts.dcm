@@ -1,0 +1,44 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATMEGA32U4-AU
+D MCU AVR 32K FLASH 16MHZ 44-TQFP Atmel ATMEGA32U4-AU, 8bit AVR Microcontroller, 16MHz, 1 kB, 32 kB Flash, 44-Pin TQFP
+F http://www.atmel.com/images/atmel-7766-8-bit-avr-atmega16u4-32u4_summary.pdf
+$ENDCMP
+#
+$CMP ECS-120-18-33-JEM-TR
+D Crystals 12MHz 20ppm 18pF -20C +70C
+F https://componentsearchengine.com/Datasheets/1/ECS-120-18-33-JEM-TR.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP PTS526_SM15_SMTR2_LFS
+D Tactile Switches 50mA 12VDC, 5.2x5.2mm, 1.5mm H, 160gf, G leads, No ground pin, metal actuator
+$ENDCMP
+#
+$CMP UJ2-AH-4-TH
+D USB Connectors USB 2.0 type A jack 4 pin Horizontal TH
+F https://www.cui.com/product/resource/uj2-ah-4-th.pdf
+$ENDCMP
+#
+$CMP XR22404CG28TR-F
+D IC USB 2.0 4-PORT HUB 28SSOP
+F https://www.maxlinear.com/document?id=22105
+$ENDCMP
+#
+$CMP ECS-160-18-23B-JTM-TR
+D Crystals 16MHz 18pF ESR 50 20ppm -20C +70C
+K
+F https://www.ecsxtal.com/store/pdf/ecx_64r.pdf
+$ENDCMP
+#
+$CMP TSX-3225_16.0000MF18X-AC0
+D Crystals 16MHz 10ppm 9pF -40C +85C
+K
+F https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf
+$ENDCMP
+#
+#End Doc Library
