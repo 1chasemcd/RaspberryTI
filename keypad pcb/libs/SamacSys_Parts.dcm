@@ -41,4 +41,10 @@ K
 F https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf
 $ENDCMP
 #
+$CMP 10129380-908001ALF
+D EconoStik, Board to Board connector, Unshrouded Vertical Header, Surface Mount, Single Row, 3 Positions, 2.54 mm (0.100in) Pitch.
+K
+F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10129380.pdf
+$ENDCMP
+#
 #End Doc Library

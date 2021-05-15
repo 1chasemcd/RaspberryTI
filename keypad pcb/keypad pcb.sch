@@ -307,19 +307,19 @@ Wire Wire Line
 	1900 8650 1900 8850
 Connection ~ 1800 8650
 Wire Wire Line
-	5700 2400 5700 2050
+	5700 2400 5700 2200
 Wire Wire Line
 	5700 2050 5050 2050
 $Comp
 L Device:R_Small_US R3
 U 1 1 6098AE5C
-P 4300 3150
-F 0 "R3" V 4095 3150 50  0000 C CNN
-F 1 "usb keybord" V 4186 3150 50  0000 C CNN
-F 2 "" H 4300 3150 50  0001 C CNN
-F 3 "~" H 4300 3150 50  0001 C CNN
-	1    4300 3150
-	0    1    1    0   
+P 6550 3450
+F 0 "R3" V 6345 3450 50  0000 C CNN
+F 1 "usb keybord" V 6436 3450 50  0000 C CNN
+F 2 "" H 6550 3450 50  0001 C CNN
+F 3 "~" H 6550 3450 50  0001 C CNN
+	1    6550 3450
+	0    -1   -1   0   
 $EndComp
 $Comp
 L usb-c:UJC-HP-3-SMT-TR J3
@@ -355,26 +355,20 @@ $EndComp
 Wire Wire Line
 	1400 9050 1600 9050
 Wire Wire Line
-	4200 3150 2650 3150
-Wire Wire Line
-	2650 3150 2650 1550
+	6650 3450 8200 3450
 Wire Wire Line
 	2650 1550 3250 1550
 $Comp
 L Device:R_Small_US R4
 U 1 1 6098BF1D
-P 4300 2850
-F 0 "R4" V 4095 2850 50  0000 C CNN
-F 1 "usb keybord" V 4186 2850 50  0000 C CNN
-F 2 "" H 4300 2850 50  0001 C CNN
-F 3 "~" H 4300 2850 50  0001 C CNN
-	1    4300 2850
-	0    1    1    0   
+P 6600 3150
+F 0 "R4" V 6395 3150 50  0000 C CNN
+F 1 "usb keybord" V 6486 3150 50  0000 C CNN
+F 2 "" H 6600 3150 50  0001 C CNN
+F 3 "~" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4200 2850 2800 2850
-Wire Wire Line
-	2800 2850 2800 1650
 Wire Wire Line
 	2800 1650 3250 1650
 $Comp
@@ -537,7 +531,7 @@ L Device:C C0
 U 1 1 609B914E
 P 9500 3300
 F 0 "C0" H 9615 3346 50  0000 L CNN
-F 1 "C" H 9615 3255 50  0000 L CNN
+F 1 "1uF" H 9615 3255 50  0000 L CNN
 F 2 "" H 9538 3150 50  0001 C CNN
 F 3 "~" H 9500 3300 50  0001 C CNN
 	1    9500 3300
@@ -610,15 +604,9 @@ Wire Wire Line
 Wire Wire Line
 	8200 2200 9850 2200
 Wire Wire Line
-	8200 3150 8200 2200
-Wire Wire Line
-	4400 3150 8200 3150
+	6450 3450 4450 3450
 Wire Wire Line
 	8050 2300 9850 2300
-Wire Wire Line
-	8050 2850 8050 2300
-Wire Wire Line
-	4400 2850 8050 2850
 $Comp
 L mouser:ATMEGA32U4-AU IC0
 U 1 1 609863C6
@@ -1486,4 +1474,160 @@ F 9 "PTS526 SM15 SMTR2 LFS" H 23050 10200 50  0001 L CNN "Manufacturer_Part_Numb
 	1    22000 10800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 60A042C5
+P 6150 2200
+F 0 "JP1" H 6150 2405 50  0000 C CNN
+F 1 "usb hub bypas D+" H 6150 2314 50  0000 C CNN
+F 2 "" H 6150 2200 50  0001 C CNN
+F 3 "~" H 6150 2200 50  0001 C CNN
+	1    6150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP0
+U 1 1 60A04F60
+P 4600 2550
+F 0 "JP0" H 4600 2755 50  0000 C CNN
+F 1 "usb hub bypas D-" H 4600 2664 50  0000 C CNN
+F 2 "" H 4600 2550 50  0001 C CNN
+F 3 "~" H 4600 2550 50  0001 C CNN
+	1    4600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1650 2800 3150
+Wire Wire Line
+	2800 3150 6300 3150
+Wire Wire Line
+	2650 1550 2650 3450
+Wire Wire Line
+	8200 2200 8200 3450
+Wire Wire Line
+	6700 3150 8050 3150
+Wire Wire Line
+	5700 2200 6000 2200
+Connection ~ 5700 2200
+Wire Wire Line
+	5700 2200 5700 2050
+Wire Wire Line
+	5150 2400 5000 2400
+Wire Wire Line
+	5000 2400 5000 2550
+Wire Wire Line
+	5000 2550 4750 2550
+Connection ~ 5150 2400
+Wire Wire Line
+	4450 2550 4450 3450
+Connection ~ 4450 3450
+Wire Wire Line
+	4450 3450 2650 3450
+Wire Wire Line
+	8050 2300 8050 3150
+Wire Wire Line
+	6300 2200 6300 3150
+Connection ~ 6300 3150
+Wire Wire Line
+	6300 3150 6500 3150
+$Comp
+L power:+5V #PWR?
+U 1 1 60A3BA7E
+P 10950 900
+F 0 "#PWR?" H 10950 750 50  0001 C CNN
+F 1 "+5V" H 10965 1073 50  0000 C CNN
+F 2 "" H 10950 900 50  0001 C CNN
+F 3 "" H 10950 900 50  0001 C CNN
+	1    10950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60A3C8D3
+P 11950 900
+F 0 "#PWR?" H 11950 750 50  0001 C CNN
+F 1 "+5V" H 11965 1073 50  0000 C CNN
+F 2 "" H 11950 900 50  0001 C CNN
+F 3 "" H 11950 900 50  0001 C CNN
+	1    11950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mouser:10129380-908001ALF J4
+U 1 1 60A4264E
+P 2000 6800
+F 0 "J4" V 2354 6928 50  0000 L CNN
+F 1 "adafruit powerboost 1000c conector" V 2445 6928 50  0000 L CNN
+F 2 "10129380908001ALF" H 2650 6900 50  0001 L CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10129380.pdf" H 2650 6800 50  0001 L CNN
+F 4 "EconoStik, Board to Board connector, Unshrouded Vertical Header, Surface Mount, Single Row, 3 Positions, 2.54 mm (0.100in) Pitch." H 2650 6700 50  0001 L CNN "Description"
+F 5 "9.85" H 2650 6600 50  0001 L CNN "Height"
+F 6 "649-1012938090801ALF" H 2650 6500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/10129380-908001ALF?qs=0lQeLiL1qya5lkjRb0gX8A%3D%3D" H 2650 6400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amphenol" H 2650 6300 50  0001 L CNN "Manufacturer_Name"
+F 9 "10129380-908001ALF" H 2650 6200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2000 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 9050 1700 8000
+Wire Wire Line
+	1700 8000 2000 8000
+Wire Wire Line
+	2000 8000 2000 7600
+$Comp
+L power:+BATT #PWR?
+U 1 1 60A4AA45
+P 2000 6800
+F 0 "#PWR?" H 2000 6650 50  0001 C CNN
+F 1 "+BATT" H 2015 6973 50  0000 C CNN
+F 2 "" H 2000 6800 50  0001 C CNN
+F 3 "" H 2000 6800 50  0001 C CNN
+	1    2000 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 6500 1    50   Input ~ 0
+enable
+Wire Wire Line
+	1900 6800 1900 6500
+Wire Wire Line
+	1800 7600 1800 7800
+Wire Wire Line
+	1800 7800 1600 7800
+Wire Wire Line
+	1600 7800 1600 8650
+Connection ~ 1600 8650
+Text GLabel 1800 6450 1    50   Input ~ 0
+low
+Wire Wire Line
+	1800 6800 1800 6450
+$Comp
+L power:+5V #PWR?
+U 1 1 60A5719E
+P 1700 6800
+F 0 "#PWR?" H 1700 6650 50  0001 C CNN
+F 1 "+5V" H 1715 6973 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7600 1800 7600
+Connection ~ 1800 7600
+$Comp
+L Connector:TestPoint TP5
+U 1 1 60A5C3D5
+P 9350 4850
+F 0 "TP5" V 9545 4922 50  0000 C CNN
+F 1 "reset" V 9454 4922 50  0000 C CNN
+F 2 "" H 9550 4850 50  0001 C CNN
+F 3 "~" H 9550 4850 50  0001 C CNN
+	1    9350 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11050 4800 11050 4850
+Wire Wire Line
+	11050 4850 9350 4850
 $EndSCHEMATC
